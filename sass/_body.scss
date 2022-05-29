@@ -1,3 +1,7 @@
+*{
+  margin: 1px;
+  padding:1px;
+}
 body {
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,83 +11,82 @@ body {
 
 /* contenedor*/
 .grid_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "navbar"
-        "main"
-        "main"
-        "main"
-        "main"
-        "main"
-        "main"
-        "footer";
-        .nabvar {
-            grid-area: nabvar;
-          }
-          .footer {
-            grid-area: footer;
-            text-align: center
-          }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "footer";
+
+  .nabvar {
+    grid-area: nabvar;
   }
-  .main {
-    color: blanchedalmond;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.1fr 0.3fr 1.6fr;
-    gap: 7px 7px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "kawa1 kawa2"
-        "titulo1 titulo2"
-        "texto1 texto2";
-    grid-area: main;
-    .kawa1 {
-        grid-area: kawa1;
-        text-align: center;
-      }
-      .titulo1 {
-        text-align: center;
-        grid-area: titulo1;
-      }
-      .texto1 {
-        text-align: center;
-        grid-area: texto1;
-      }
-      
-      .kawa2 {
-        grid-area: kawa2;
-        text-align: center;
-      }
-      
-      .titulo2 {
-        text-align: center;
-        grid-area: titulo2;
-      }
-      
-      .texto2 {
-        text-align: center;
-        grid-area: texto2;
-      }
+
+  .footer {
+    grid-area: footer;
+    text-align: center
   }
-  footer{
-    p{
-      text-align: center;
-      color: rgb(255, 255, 255);
-    }
-    .ico {
-      text-align: right;
-    }
-    
-    /*redes solciales*/
-    .red {
-      width: 30px;
-    }
+}
+
+.main {
+  color: blanchedalmond;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.1fr 0.3fr 1.6fr;
+  gap: 7px 7px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "kawa1 kawa2"
+    "titulo1 titulo2"
+    "texto1 texto2";
+  grid-area: main;
+
+  .kawa1 {
+    grid-area: kawa1;
+    text-align: center;
   }
-  
-  
-  
-  
+
+  .titulo1 {
+    text-align: center;
+    grid-area: titulo1;
+  }
+
+  .texto1 {
+    text-align: center;
+    grid-area: texto1;
+  }
+
+  .kawa2 {
+    grid-area: kawa2;
+    text-align: center;
+  }
+
+  .titulo2 {
+    text-align: center;
+    grid-area: titulo2;
+  }
+
+  .texto2 {
+    text-align: center;
+    grid-area: texto2;
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+  .ico {
+    text-align: right;
+  }
+}
